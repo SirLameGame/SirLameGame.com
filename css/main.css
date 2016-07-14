@@ -3,6 +3,13 @@ html, body {
 }
 
 
+.discordlink:hover {
+    background: #7289DA;
+    color: white;
+    padding: 2px;
+    border-radius:10px;
+}
+
 .ytlink:hover {
     background: white;   
 }
@@ -116,4 +123,4 @@ html, body {
     background-color: white;
     bottom: 0px;
     padding-top:2px;
-} 
+}
