@@ -12,11 +12,10 @@
         <meta name="viewport" content="width=device-width">
 
         <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/mobile.css?v1.3">
+        <link rel="stylesheet" href="css/main.css?v1.10">
         <link href='http://fonts.googleapis.com/css?family=Bevan' rel='stylesheet' type='text/css'>
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-        
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 
@@ -26,7 +25,12 @@
 <script>
 
 //send user to twitch mobile site if mobile device           
-    $(document).ready(function(){ 
+    $(document).ready(function(){
+  
+  if ( (screen.width < 1024) && (screen.height < 768) ) { 
+   
+    $(location).attr('href','http://sirlamegame.com/mobile.html');
+} 
     
     $('.TwitchVideoChk').change(function(){
         if(this.checked)
@@ -35,7 +39,6 @@
             $('.TwitchVideo').fadeOut('slow');
 
     });
-      
         
     $('.HitboxVideoChk').change(function(){
         if(this.checked)
@@ -61,29 +64,29 @@
 
 });
   
-</script>
-        
-    <!-- google plus mobile reccomendations -->
+</script>  
+    
+<!-- google plus mobile reccomendations -->
         <script type="text/javascript">
-  (function() {
-    var po = document.createElement("script"); po.type = "text/javascript"; po.async = true;
-    po.src = "https://apis.google.com/js/plusone.js?publisherid=113573743383770096061";
-    var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(po, s);
-  })();
+              (function() {
+                var po = document.createElement("script"); po.type = "text/javascript"; po.async = true;
+                po.src = "https://apis.google.com/js/plusone.js?publisherid=113573743383770096061";
+                var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(po, s);
+              })();
         
-      <!-- google analytics -->  
         </script>
-
+        
+<!-- google analytics -->  
         <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-47343457-1', 'sirlamegame.com');
-  ga('send', 'pageview');
+          ga('create', 'UA-47343457-1', 'sirlamegame.com');
+          ga('send', 'pageview');
 
-</script>
+        </script>
 </head>
     <body>    
         
@@ -93,13 +96,12 @@
 
         <div class="header-container">
             <header class="wrapper clearfix">
-                <h1 class="title"><a class="titletxt" href="index.html">SirLameGame</a></h1>
+                <h1 class="title"><a class="titletxt" href="index.html">SirLameGame.com</a></h1>
                 <nav>
                     <ul>
                     </ul>
                 </nav>
             
-
             
             </header>
         </div>
@@ -110,6 +112,7 @@
         <div class="Navigation">
             
         <ul>
+            
             <li><a class="ytlink" href="http://www.youtube.com/sirlamegame" target="_blank">
                 
                 You<span class="yttxt">Tube</span>
@@ -131,8 +134,11 @@
             <li><a class="ttlink" href="http://www.twitter.com/sirlamegame" target="_blank">twitter</a></li>
             <li><a class="stlink" href="http://www.Steamcommunity.com/id/sirlamegame" target="_blank">Steam</a></li>
             <li><a class="ralink" href="http://www.Raptr.com/sirlamegame" target="_blank">Rapt<span class="ratxt">r</span></a></li>
-                <li><a class="zalink" href="http://www.zazzle.com/sirlamegame*" target="_blank">Gear</a></li><li><a class="bllink" href="http://www.sirlamegame.wordpress.com" target="_blank">Blog</a></li>
-            
+            <li><a class="gwlink" href="https://gamewisp.com/channel/sirlamegame" target="_blank">GameWisp</a></li>    
+            <li><a class="zalink" href="http://www.zazzle.com/sirlamegame*" target="_blank">Gear</a></li>
+            <li><a class="bllink" href="http://www.sirlamegame.wordpress.com" target="_blank">Blog</a></li>
+            <li><a class="doclink" href="https://drive.google.com/folderview?id=0B3eqjyrTRSodV1ZHdHo3OUlhdnM&usp=sharing#list" target="_blank">Documents</a></li>
+            <li><a class="newslink" href="newsletter.html" target="_blank">Newsletter</a></li>
         </ul>    
 
 <!-- AddThis Button BEGIN -->
@@ -148,25 +154,27 @@
 </div>
             
 
-            <script type="text/javascript">
-                
-                var addthis_config = {"data_track_addressbar":true};
-                data_ga_property: 'UA-47343457-1'
-                </script>
+<script type="text/javascript">
+
+    var addthis_config = {"data_track_addressbar":true};
+    data_ga_property: 'UA-47343457-1'
+    </script>
 
             <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52dd8fc238a6738d"></script>
 <!-- AddThis Button END -->
             
             
             
-            
         </div> 
                  
                     <div class="Stream">
-                    
+                    <div class="SiteNotifications" style="visibility:hidden;">
+                    Vote for the next story game! <a href="http://sirlamegame.wordpress.com/" target="_blank">Click here!</a>
+                    </div>
+                        
                         <div class="VideoOptions">
                         
-                        <span class="StreamVidOptions"><a>Video:</a> Hitbox <input class="HitboxVideoChk" type="checkbox" value="1" checked></span> 
+                        <span class="StreamVidOptions"><a>Video:</a> Twitch <input class="TwitchVideoChk" type="checkbox" value="1" checked> Hitbox <input class="HitboxVideoChk" type="checkbox" value="1" unchecked></span> 
                         
                         
                             <span class="StreamChatOptions"><a>Chat:</a> Twitch <input class="TwitchChatChk" type="checkbox" value="1" checked> Hitbox <input class="HitboxChatChk" type="checkbox" value="1" unchecked> </span>
@@ -174,18 +182,23 @@
                         </div>
                         
                     <!-- Hitbox Video -->
-                        <div class="HitboxVideo" style="display: normal;">
+                        <div class="HitboxVideo">
                     <iframe width="620" height="360" src="http://hitbox.tv/embed/SirLameGame?autoplay=false" frameborder="0" allowfullscreen></iframe>    
                         
                     </div>
                         
+                        <!-- Twitch Video -->
+                        <div class="TwitchVideo">
+                        <object type="application/x-shockwave-flash" height="378" width="620" id="live_embed_player_flash" data="http://www.twitch.tv/widgets/live_embed_player.swf?channel=sirlamegame" bgcolor="#000000"><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="always" /><param name="allowNetworking" value="all" /><param name="movie" value="http://www.twitch.tv/widgets/live_embed_player.swf" /><param name="flashvars" value="hostname=www.twitch.tv&channel=sirlamegame&auto_play=true&start_volume=100" /></object>
+                        </div>
+                        
                         <!-- Twitch Chat -->
                         <div class="TwitchChat">
-                        <iframe frameborder="0" scrolling="no" id="chat_embed" src="http://twitch.tv/chat/embed?channel=sirlamegame&popout_chat=true" height="335" width="629"></iframe>
+                        <iframe frameborder="0" scrolling="no" id="chat_embed" src="http://twitch.tv/chat/embed?channel=sirlamegame&popout_chat=true" height="435" width="629"></iframe>
                         </div>
                         <!-- hitbox chat -->
                         <div class="HitboxChat">
-                        <iframe width="629" height="335" src="http://www.hitbox.tv/embedchat/SirLameGame" frameborder="0" allowfullscreen></iframe>
+                        <iframe width="629" height="490" src="http://www.hitbox.tv/embedchat/SirLameGame" frameborder="0" allowfullscreen></iframe>
                     </div>
             </div>
    
@@ -200,6 +213,8 @@
 
         <div class="footer-container">
             <footer class="wrapper">
+            </div>
+            
             </footer>
         </div>
 
