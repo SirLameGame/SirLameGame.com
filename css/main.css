@@ -2,6 +2,15 @@ html, body {
   height: 100%;
 }
 
+ul li {
+    list-style-type: none;
+    padding-top: 10px;
+    color: black;
+}
+
+.hide_url_color {
+    color: black;
+}
 
 .discordlink:hover {
     background: #7289DA;
