@@ -32,23 +32,6 @@ $( document ).ready(function() {
     });
     
     
-    var reddit_callback = function() {
-                    console.log('lol2')
-           var comments = data.data.children.slice(0,3);
-           
-        console.log('lol')
-            var comment_elem = document.getElementById('reddit_comment_list')
-            
-            console.log(comment_elem)
-            
-           for (comment in comments) {
-               
-               li = "<li>" + comment.body + "</li>" + "\n"
-               comment_elem.innerHTML = comment_elem.innerHTML + li
-           }
-    };
-    
-    
     //Show reddit comment
       reddit_comment_list = $("#reddit_comment_list")
       $.getJSON(
